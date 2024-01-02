@@ -103,8 +103,7 @@
           </header>
     </div>
   
-   <div id="smooth-wrapper">
-    <div id="smooth-content" class="overflow-visible w-100  ">
+    <div id="smooth-content" class="overflow-hidden w-100  ">
         <!-- hero  -->
     
         <div class="bg-primary h-screen relative overflow-hidden ">
@@ -325,12 +324,11 @@
        
        </footer>
     </div>
-</div> 
+
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js" ></script>
    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js" ></script>    
    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js" ></script>    
-   <script src="https://unpkg.com/split-type" ></script>    
-    <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script>
+   <script src="https://unpkg.com/split-type" ></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
@@ -349,9 +347,8 @@
              },     
              autoplay: {
                  delay: 0,
-                 pauseOnMouseEnter: true,        // stop autoplay when hovering
-                 disableOnInteraction: false,    // restart autoplay when hover is removed
-                         // reverse the autoplay direction
+                 pauseOnMouseEnter: true,   
+                 disableOnInteraction: false,  
              },
          })
          </script>
@@ -383,17 +380,6 @@
             }
     })
 })
-
-const lenis = new Lenis()
-lenis.on('scroll', (e) => {
-console.log(e)
-})
-
-function raf(time) {
-lenis.raf(time)
-requestAnimationFrame(raf)
-}
-requestAnimationFrame(raf)
     </script>
 
 </body>
