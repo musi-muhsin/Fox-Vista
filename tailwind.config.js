@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/**/*.html"],
+  content: ["./**/*.html"],
   theme: {
     extend: {
       container: {
         center: true,
-        padding: '2rem',
+        padding: '1rem',
         screens: {
           sm: '100%',
           md: '100%',

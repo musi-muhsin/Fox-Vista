@@ -1,29 +1,20 @@
-document.addEventListener("DOMContentLoaded", function () {
-    var dropdown = document.querySelector(".dropdown");
 
-    dropdown.addEventListener("mouseover", function () {
-      var dropdownContent = dropdown.querySelector(".dropdown-content");
-      dropdownContent.style.height = dropdownContent.scrollHeight + "px";
-    });
+// services dropdown 
+// document.addEventListener("DOMContentLoaded", function () {
+//     var dropdown = document.querySelector(".dropdown");
 
-    dropdown.addEventListener("mouseout", function () {
-      var dropdownContent = dropdown.querySelector(".dropdown-content");
-      dropdownContent.style.height = "0";
-    });
-  });
+//     dropdown.addEventListener("mouseover", function () {
+//       var dropdownContent = dropdown.querySelector(".dropdown-content");
+//       dropdownContent.style.height = dropdownContent.scrollHeight + "px";
+//     });
 
-  
-// json file 
-document.addEventListener("DOMContentLoaded", function () {
-  var animation = bodymovin.loadAnimation({
-    container: document.getElementById("animation-container"),
-    renderer: "svg",
-    loop: true,
-    autoplay: true,
-    path: "../assets/images/Animation - 1698488886741.json", // Path to your JSON animation file
-  });
-});
+//     dropdown.addEventListener("mouseout", function () {
+//       var dropdownContent = dropdown.querySelector(".dropdown-content");
+//       dropdownContent.style.height = "0";
+//     });
+//   });
 
+// text fade animation 
 document.addEventListener('DOMContentLoaded', function () {
   const fadeInSection = document.querySelectorAll('.fade-in-section');
 
@@ -60,25 +51,25 @@ tl.from(".line span", 1.8, {
   stagger: {
     amount:0.1
   }
-})
+});
 // smooth scroll 
 gsap.registerPlugin(ScrollTrigger);
- ScrollTrigger.normalizeScroll(true)
 
 ScrollTrigger.create({
   start: 'top -80',
   end: 99999,
-  toggleClass: {className: 'main-tool-bar--scrolled', targets: '.main-tool-bar'}
+  toggleClass: { className: 'main-tool-bar--scrolled', targets: '.main-tool-bar' }
 });
 
 const lenis = new Lenis({
   duration: 1.2,
   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
-})
+});
 
 function raf(time) {
-    lenis.raf(time)
-    requestAnimationFrame(raf)
+  lenis.raf(time);
+  ScrollTrigger.update(); // Add this line to update ScrollTrigger
+  requestAnimationFrame(raf);
 }
 
-requestAnimationFrame(raf)
+requestAnimationFrame(raf);

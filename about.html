@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon.png">
+    <meta name="keywords"
+    content="Fox Vista|Foxvista|Foxvista|App Development company in Trivandrum|Website development company in Trivandrum|Best app development Company in Trivandrum|Best Webdesigning Company in Trivandrum|Best Web Development company in Trivandrum|Best App Development company in Kerala|Best Web development company in Kerala|Digital Marketing Agency In Trivandrum|Ui/Ux Development in Trivandrum|Product designing In Trivandrum">
+<meta name="description"
+    content="Foxvista - The Best Company in Trivandrum Focusing on App Development,Web development,Web Designing, Ui /Ux & Digital Marketing. Best Web Development Company in Trivandrum,Best App Development Company in Trivandrum,Best Web designing Company in Trivandrum,Best Digital Marketing Service in Trivandrum">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
     <title>Fox Vista || Designing & Developing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,21 +15,24 @@
 <link href="/public/style.css" rel="stylesheet">
 
 </head>
-<body class="">
+<body class="bg-[#F8F8F8]">
     <div class="container  bg-transparent">
         <header class="main-tool-bar z-[999]  w-full flex items-center justify-between">
             <div class="flex items-center justify-between w-full py-3">
-                <img src="../assets/images/logo.png" class="w-10" alt="">
-                <div id="menuToggle" class="md:hidden">
-                    <input id="checkbox" type="checkbox">
-                    <label class="toggle" for="checkbox">
-                        <div class="bar bar--top"></div>
-                        <div class="bar bar--middle"></div>
-                        <div class="bar bar--bottom"></div>
-                    </label>
-                  </div>
+                <a href="index.html">
+                <img src="/images/logo.png" class="w-[2.5rem] md:w-[3rem]" alt="">
+                </a>
+                  <button class="open-icon md:hidden">
+                    <svg width="40" height="40" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+                            <path d="M7.94971 11.9497H39.9497"/>
+                            <path d="M7.94971 23.9497H39.9497"/>
+                            <path d="M7.94971 35.9497H39.9497"/>
+                        </g>
+                    </svg>
+                  </button>
                      <div class=" bg-white md:bg-transparent w-full  top-14 md:top-0 hidden  md:flex flex-col md:flex-row items-center justify-center gap-5 ">
-              <div class="dropdown py-8">
+              <!-- <div class="dropdown py-8">
                   <a href="#" class="hover-group font-sans text-[#505050] flex items-center gap-2 transition">
                     <span class="text">Services</span>
                     <svg class="icon fill-[#505050] " width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -89,15 +96,30 @@
                       </div>
                  
                   </div>
-                </div>
-                <a href="work.html" class="hover:text-white  text-[#505050] py-8">Works</a>
-               <a href="about.html" class="hover:text-white font-sans text-[#505050] py-8">About</a>
-               <a href="contact.html" class="hover:text-white font-sans text-[#505050] py-8">Contact</a>
+                </div> -->
+                <a href="index.html" class="hover:text-white font-sans text-[#505050]  ">Home</a>
+                <a href="#" class="hover:text-white  text-[#505050] ">Works</a>
+               <a href="about.html" class="text-white">About</a>
+               <a href="contact.html" class="hover:text-white font-sans text-[#505050] ">Contact</a>
               </div>
-               <a href="contact.html" class="text-white font-sans py-8 w-[150px]">Ask for a quote</a>
+              <a href="contact.html" class="hidden md:block text-white font-sans md:w-[200px] lg:w-[150px]">Ask for a quote</a>
             </div>
-            
+              <!-- mobile menu  -->
+              <div id="overlay" class="md:hidden fixed top-0 left-0 z-[9999] flex items-center h-screen w-full bg-black text-white">
+                <button class="absolute right-5 top-5 close-icon ">
+                    <svg width="40" height="40" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#fff" fill-rule="evenodd" d="M4.28 3.22a.75.75 0 0 0-1.06 1.06L6.94 8l-3.72 3.72a.75.75 0 1 0 1.06 1.06L8 9.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L9.06 8l3.72-3.72a.75.75 0 0 0-1.06-1.06L8 6.94z" clip-rule="evenodd"/>
+                    </svg>
+                </button>
+                <nav>
+                    <a href="index.html" class="hover:text-white block m-10 text-3xl text-[#505050]">Home</a>
+                    <a href="#" class="hover:text-white block m-10 text-3xl text-[#505050]">Works</a>
+                    <a href="about.html" class="text-white block m-10 text-3xl">About</a>
+                    <a href="contact.html" class="hover:text-white block m-10 text-3xl font-sans text-[#505050]">Contact</a>
+                </nav>
+            </div>
           </header>
+           
     </div>
   
    <div id="smooth-wrapper">
@@ -105,12 +127,12 @@
         <!-- hero  -->
     
         <div class="bg-primary h-[90vh] relative overflow-hidden ">
-            <!-- <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
-                <source src="../assets/images/hero-video.mp4" type="video/mp4">
-            </video> -->
+            <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
+                <source src="/images/hero-video.mp4" type="video/mp4">
+            </video>
             <div class="container my-auto h-screen grid items-center">
                 <div class="flex flex-col gap-16 md:gap-20  will-change-transform" data-speed="clamp(0.5)">
-                    <h1 class="flex flex-col text-white font-sans text-[1.8rem] sm:text-[2rem] md:text-[2.2rem] lg:text-[2.9rem] xl:text-[3.7rem] lg:leading-relaxed">
+                    <h1 class="hidden md:flex flex-col text-white font-sans text-[1.8rem] sm:text-[2rem] md:text-[2.2rem] lg:text-[2.9rem] xl:text-[3.7rem] lg:leading-relaxed">
                         <span class="line h-[85px] md:h-[70px] xl:h-[100px] relative overflow-hidden">
                             <span class="absolute">
                                 When you need a team that's 
@@ -122,8 +144,12 @@
                             </span>
                         </span>
                     </h1>
+                    <h1 class="flex md:hidden text-white font-sans text-[2.4rem] leading-[1.2] md:leading-relaxed">
+                        When you need a team that's 
+                        always got your back. 
+                    </h1>
                     <div class="">
-                        <p class="flex flex-col md:text-left text-lg md:text-2xl lg:text-3xl font-medium text-[#888888] w-[16rem] md:w-screen lg:max-w-3xl lg:ml-auto ">
+                        <p class="hidden md:flex flex-col md:text-left text-lg md:text-2xl lg:text-3xl font-medium text-[#888888] w-[16rem] md:w-screen lg:max-w-3xl lg:ml-auto ">
                             <span class="line h-[55px] relative overflow-hidden">
                                 <span class="absolute ">
                                     We're your partners in success, and we're 
@@ -140,6 +166,9 @@
                                 </span>
                             </span>
                         </p>
+                        <p class="flex md:hidden text-lg font-medium text-[#888888]">
+                            We're your partners in success, and we're committed to helping you achieve your goals.
+                         </p>
                     </div>
                 </div>
             </div>
@@ -147,10 +176,77 @@
        </div>
        
        <div class="container">
+        <div class=" my-16 will-change-transform" data-speed="1.1" >
+          <div class="grid md:grid-cols-2 gap-3 md:gap-5">
+            <div class="flex flex-col gap-3 md:gap-5">
+              <img src="/images/img-1.png" class="rounded-lg" alt="">
+              <div class="grid grid-cols-3 gap-3 md:gap-5">
+                 <div class="col-span-1">
+                  <div class="grid grid-cols-2 gap-3 md:gap-5 ">
+                    <div class="grid grid-rows-2 gap-3 md:gap-5">
+                        <img src="/images/instagram-img.png" class="rounded-lg w-full" alt="">
+                        <img src="/images/twitter-img.png" class="rounded-lg w-full" alt="">
+                    </div>
+                    <div class="grid grid-rows-2 gap-3 md:gap-5">
+                        <img src="/images/behance-img.png" class="rounded-lg w-full" alt="">
+                        <img src="/images/youtube-img.png" class="rounded-lg w-full" alt="">
+                    </div>
+                    <div class="col-span-2 bg-[#E5E5E5] rounded-lg p-3 flex flex-col self-stretch"> 
+                        <p class="ext-2xl md:text-4xl font-medium ">1</p>
+                        <div class="flex flex-col gap-3">
+                         <p class="text-xl md:text-2xl font-medium">Office</p>
+                        </div>
+                     </div>
+                  </div>
+                
+                 </div>
+                 <div class="col-span-2">
+                    <div class="bg-[#FF5906] rounded-lg text-white p-3 flex flex-col justify-between h-full"> 
+                       <p class="text-2xl md:text-4xl font-medium ">10</p>
+                       <div class="flex flex-col gap-2">
+                        <p class="text-xl md:text-2xl font-medium">Team members</p>
+                        <p class="text-sm md:text-md md:mb-10 leading-6">Brilliant minds come together, sparking creativity and working as a team to overcome any challenge.</p>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3 md:gap-5">
+                <div class="grid md:grid-cols-2 gap-3 md:gap-5">
+                    <div class="bg-primary rounded-lg text-white p-3 flex flex-col justify-between h-full"> 
+                        <p class="text-2xl md:text-4xl font-medium ">100%</p>
+                        <div class="flex flex-col gap-2">
+                         <p class="text-xl md:text-2xl font-medium">Dedication</p>
+                         <p class="text-sm md:text-md md:mb-8 leading-6">With sweat as their conductor and grit as their score, they play on, their dedication a relentless melody driving them towards the final triumphant chord.</p>
+                        </div>
+                     </div>
+                    <div class="grid grid-cols-2 gap-3 md:gap-5 ">
+                        <div class="col-span-2 bg-[#E5E5E5] rounded-lg p-3 flex flex-col self-stretch"> 
+                            <p class="ext-2xl md:text-4xl font-medium ">1</p>
+                            <div class="flex flex-col gap-3">
+                             <p class="text-xl md:text-2xl font-medium">Mission</p>
+                             <p class="text-sm md:text-md leading-6">We don't just build brands, 
+                                we build futures.</p>
+                            </div>
+                         </div>
+                        <div class="col-span-2 bg-[#E5E5E5] rounded-lg p-3 flex flex-col self-stretch"> 
+                            <p class="ext-2xl md:text-4xl font-medium mb-3">100%</p>
+                            <div class="flex flex-col gap-3">
+                             <p class="text-xl md:text-2xl font-medium">Creativity</p>
+                            </div>
+                         </div>
+                      </div>
+                 
+                </div>
+                <img src="/images/img-2.png" class="rounded-lg" alt="">
+              </div>
+          </div>
+        </div>
+
         <div class=" md:mb-10 will-change-transform" data-speed="1.1" >
-            <div class="fade-in-section pt-8 md:py-8 flex flex-col items-center gap-6 mb-5 md:mb-16">
-                <div class="text-3xl md:text-4xl lgtext-5xl md:text-center font-bold text-primary">
-                   Work
+            <div class="fade-in-section pt-8 md:py-8 flex flex-col md:items-center gap-6 mb-5 md:mb-16">
+                <div class="text-md md:text-xl font-medium text-primary">
+                   MEET THE TEAM
                 </div>
                 <p class="text-3xl md:text-4xl lgtext-5xl font-medium text-primary max-w-3xl md:text-center ">
                     You need the best team on your side. 
@@ -158,10 +254,10 @@
                 </p>
             </div>
         
-            <div class="grid grid-cols-3 fade-in-section gap-16 mb-24">
-                <div class="bg-[#D9D9D9] h-[80vh] w-full overflow-hidden relative group ">
-                  <img src="../assets/images/about-img-1.png" alt="">
-                  <div class="absolute w-3/4 p-3 top-0 z-50 -left-80 transition duration-300 delay-150 opacity-0 group-hover:left-0 group-hover:opacity-100">
+            <div class="md:grid grid-cols-3 fade-in-section gap-16 mb-24">
+                <div class="bg-[#D9D9D9] md:h-[80vh] w-full overflow-hidden relative group mb-3">
+                  <img src="/images/about-img-1.png" class="ml-auto" alt="">
+                  <div class="absolute w-3/4 p-3 top-0 z-50 md:-left-80 transition duration-300 delay-150 md:opacity-0 md:group-hover:left-0 group-hover:opacity-100">
                     <div class="text-xl font-medium">Ajay</div>
                     <div class="text-md font-normal text-black/60">Founder/ UI UX Designer</div>
                     <div class="text-sm text-black/80">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
@@ -170,17 +266,17 @@
 
                   </div>
                 </div>
-                <div class="bg-[#D9D9D9] h-[80vh] w-full overflow-hidden relative group ">
-                  <img src="../assets/images/about-img-1.png" alt="">
-                  <div class="absolute w-3/4 p-3 top-0 z-50 -left-80 transition duration-300 delay-150 opacity-0 group-hover:left-0 group-hover:opacity-100">
+                <div class="bg-[#D9D9D9] md:h-[80vh] w-full overflow-hidden relative group mb-3">
+                  <img src="/images/about-img-1.png" class="ml-auto" alt="">
+                  <div class="absolute w-3/4 p-3 top-0 z-50 md:-left-80 transition duration-300 delay-150 md:opacity-0 md:group-hover:left-0 group-hover:opacity-100">
                     <div class="text-xl font-medium">Ajay</div>
                     <div class="text-md font-normal text-black/60">Founder/ UI UX Designer</div>
                     <div class="text-sm text-black/80">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
                   </div>
                 </div>
-                <div class="bg-[#D9D9D9] h-[80vh] w-full overflow-hidden relative group ">
-                  <img src="../assets/images/about-img-1.png" alt="">
-                  <div class="absolute w-3/4 p-3 top-0 z-50 -left-80 transition duration-300 delay-150 opacity-0 group-hover:left-0 group-hover:opacity-100">
+                <div class="bg-[#D9D9D9] md:h-[80vh] w-full overflow-hidden relative group mb-3">
+                  <img src="/images/about-img-1.png"  class="ml-auto" alt="">
+                  <div class="absolute w-3/4 p-3 top-0 z-50 md:-left-80 transition duration-300 delay-150 md:opacity-0 md:group-hover:left-0 group-hover:opacity-100">
                     <div class="text-xl font-medium">Ajay</div>
                     <div class="text-md font-normal text-black/60">Founder/ UI UX Designer</div>
                     <div class="text-sm text-black/80">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
@@ -189,7 +285,7 @@
            
             </div>
 
-            <div class="grid grid-cols-3 gap-10 ">
+            <div class="md:grid grid-cols-3 gap-10 ">
                 <div class="col-span-1 ">
                     <div class=" fade-in-section flex flex-col mb-5">
                         <span class="text-[#FF5906] text-sm ">About FOXVISTA </span>
@@ -213,16 +309,20 @@
        
       
       
-       
-       <footer class="fade-in-section bg-primary will-change-transform" data-speed="1.1">
+       <!--footer-->
+      <footer class="fade-in-section bg-primary will-change-transform" data-speed="1.1">
            <div class="container py-12">
                <div class="md:flex justify-between items-end mb-10 md:mb-20">
-                   <nav class=" flex justify-between md:justify-start gap-4 mb-8 md:mb-3 ">
-                       <a href="#" class="text-white font-sans text-sm font-medium">Home</a>
-                       <a href="#" class="text-white font-sans text-sm font-medium">Service</a>
-                       <a href="#" class="text-white font-sans text-sm font-medium">Works</a>
-                       <a href="#" class="text-white font-sans text-sm font-medium">Contact</a>
-                   </nav>
+                <div class="flex flex-col items-center md:items-start gap-3">
+                    <img src="/images/logo.svg" class="w-28 md:w-52" alt="">
+                    <nav class=" flex justify-between md:justify-center gap-4 mb-8 md:mb-3 ">
+                        <a href="#" class="text-white font-sans text-sm font-medium">Home</a>
+                        <a href="#" class="text-white font-sans text-sm font-medium">Service</a>
+                        <a href="#" class="text-white font-sans text-sm font-medium">Works</a>
+                        <a href="#" class="text-white font-sans text-sm font-medium">Contact</a>
+                    </nav>
+                </div>
+              
                    <div class="text-center ">
                        <p class="text-xl md:text-2xl lg:text-3xl font-normal text-white mb-3">Start a New Project......</p>
                        <p class="text-2xl md:text-3xl lg:text-4xl font-bold text-white uppercase">Let’s Talk</p>
@@ -238,12 +338,12 @@
            </div>
         </div> 
 
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js" ></script>
         <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js" ></script>    
         <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js" ></script> 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js"></script>
-     
-    <script src="/src/script.js"></script>
+        <script src="/src/script.js"></script>
+        <script src="/src/sidebar.js"></script>
 
   
 </body>
