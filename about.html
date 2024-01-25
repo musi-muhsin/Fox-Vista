@@ -15,9 +15,12 @@
 <link href="/public/style.css" rel="stylesheet">
 
 </head>
-<body class="bg-[#F8F8F8]">
+<body class="bg-[#F8F8F8] relative">
+    <div class="fixed z-[999] w-full h-screen flex items-center justify-center bg-black" id="loadingDiv">
+        <span class="loader"></span>
+    </div>
     <div class="container  bg-transparent">
-        <header class="main-tool-bar z-[999]  w-full flex items-center justify-between">
+        <header class="main-tool-bar z-[99]  w-full flex items-center justify-between">
             <div class="flex items-center justify-between w-full py-3">
                 <a href="index.html">
                 <img src="/images/logo.png" class="w-[2.5rem] md:w-[3rem]" alt="">
@@ -244,7 +247,7 @@
         </div>
 
         <div class=" md:mb-10 will-change-transform" data-speed="1.1" >
-            <div class="fade-in-section pt-8 md:py-8 flex flex-col md:items-center gap-6 mb-5 md:mb-16">
+            <!-- <div class="fade-in-section pt-8 md:py-8 flex flex-col md:items-center gap-6 mb-5 md:mb-16">
                 <div class="text-md md:text-xl font-medium text-primary font-serif">
                    MEET THE TEAM
                 </div>
@@ -252,9 +255,9 @@
                     You need the best team on your side. 
                     So we made one for you
                 </p>
-            </div>
+            </div> -->
         
-            <div class="md:grid grid-cols-3 fade-in-section gap-0 mb-24">
+            <!-- <div class="md:grid grid-cols-3 fade-in-section gap-0 mb-24">
                 <div class="bg-[#D9D9D9] h-[60vh] md:h-[80vh] w-full overflow-hidden relative group">
                   <img src="/images/about-img-1.png" class="ml-auto h-[80vh] md:h-auto" alt="">
                   <div class="absolute w-[64%] p-3 top-0 z-50 md:-left-80 transition duration-300 delay-150 md:opacity-0 md:group-hover:left-0 group-hover:opacity-100">
@@ -279,7 +282,7 @@
                     <div class="text-sm text-black/80 font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
                   </div>
                 </div> 
-            </div>
+            </div> -->
 
             <div class="md:grid grid-cols-3 gap-10 ">
                 <div class="col-span-1 ">

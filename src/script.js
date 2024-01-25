@@ -14,6 +14,13 @@
 //     });
 //   });
 
+// loader 
+window.onload = function() {
+  setTimeout(function() {
+      document.getElementById('loadingDiv').style.display = 'none'; 
+  }, 500);
+};
+
 // text fade animation 
 document.addEventListener('DOMContentLoaded', function () {
   const fadeInSection = document.querySelectorAll('.fade-in-section');

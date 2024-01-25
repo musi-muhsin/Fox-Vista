@@ -15,9 +15,13 @@
 <link href="/public/style.css" rel="stylesheet">
 
 </head>
-<body class="bg-[#F8F8F8]">
+<body class="bg-[#F8F8F8] relative">
+    <div class="fixed z-[999] w-full h-screen flex items-center justify-center bg-black" id="loadingDiv">
+        <span class="loader"></span>
+    </div>
+
     <div class="container  bg-transparent">
-        <header class="main-tool-bar z-[999]  w-full flex items-center justify-between">
+        <header class="main-tool-bar z-[99]  w-full flex items-center justify-between">
             <div class="flex items-center justify-between w-full py-3">
                 <a href="index.html">
                 <img src="images/logo.png" class="w-[2.5rem] md:w-[3rem]" alt="">
