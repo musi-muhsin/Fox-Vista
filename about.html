@@ -17,7 +17,14 @@
 </head>
 <body class="bg-[#F8F8F8] relative">
     <div class="fixed z-[999] w-full h-screen flex items-center justify-center bg-black" id="loadingDiv">
-        <span class="loader"></span>
+        <div class="typing-indicator">
+            <div class="typing-circle"></div>
+            <div class="typing-circle"></div>
+            <div class="typing-circle"></div>
+            <div class="typing-shadow"></div>
+            <div class="typing-shadow"></div>
+            <div class="typing-shadow"></div>
+        </div>
     </div>
     <div class="container  bg-transparent">
         <header class="main-tool-bar z-[99]  w-full flex items-center justify-between">
@@ -152,24 +159,24 @@
                         Always Got Your Back. 
                     </h1>
                     <div class="">
-                        <p class="hidden md:flex flex-col md:text-left text-lg md:text-2xl lg:text-3xl font-serif font-medium text-white w-[16rem] md:w-screen lg:max-w-3xl lg:ml-auto ">
-                            <span class="line h-[55px] relative overflow-hidden">
+                        <p class="hidden md:flex flex-col md:text-left text-lg md:text-2xl lg:text-3xl font-serif font-normal text-[#f6f6f6] w-[16rem] md:w-screen lg:max-w-3xl lg:ml-auto ">
+                            <span class="line h-[42px] relative overflow-hidden">
                                 <span class="absolute ">
                                     We're your partners in success, and we're 
                                 </span>
                             </span>
-                            <span class="line h-[55px] relative overflow-hidden">
+                            <span class="line h-[42px] relative overflow-hidden">
                                 <span class="absolute ">
                                     committed to helping you achieve your 
                                 </span>
                             </span>
-                            <span class="line h-[50px] relative overflow-hidden">
+                            <span class="line h-[42px] relative overflow-hidden">
                                 <span class="absolute ">
                                     goals.
                                 </span>
                             </span>
                         </p>
-                        <p class="flex md:hidden text-2xl font-serif font-medium text-[#888888]">
+                        <p class="flex md:hidden text-2xl font-serif font-normal text-[#d3d3d3]">
                             We're your partners in success, and we're committed to helping you achieve your goals.
                          </p>
                     </div>
@@ -197,7 +204,7 @@
                     <div class="col-span-2 bg-[#E5E5E5] rounded-lg p-3 flex flex-col self-stretch"> 
                         <p class="ext-2xl md:text-4xl font-medium font-serif ">1</p>
                         <div class="flex flex-col gap-3">
-                         <p class="text-xl md:text-2xl font-medium font-serif">Office</p>
+                         <p class="text-xl md:text-2xl font-medium font-serif mb-8">Office</p>
                         </div>
                      </div>
                   </div>
@@ -207,8 +214,8 @@
                     <div class="bg-[#FF5906] rounded-lg text-white p-3 flex flex-col justify-between h-full"> 
                        <p class="text-2xl md:text-4xl font-medium font-serif ">10</p>
                        <div class="flex flex-col gap-2">
-                        <p class="text-xl md:text-2xl font-medium font-serif">Team members</p>
-                        <p class="text-sm md:text-md md:mb-10 leading-6 font-serif">Brilliant minds come together, sparking creativity and working as a team to overcome any challenge.</p>
+                        <p class="text-xl md:text-2xl font-medium font-serif mb-3">Team members</p>
+                        <p class="text-sm md:text-[1rem] leading-6 font-serif font-thin mb-0 md:mb-8">Brilliant minds come together, sparking creativity and working as a team to overcome any challenge.</p>
                        </div>
                     </div>
                  </div>
@@ -218,9 +225,9 @@
                 <div class="grid md:grid-cols-2 gap-3 md:gap-5">
                     <div class="bg-primary rounded-lg text-white p-3 flex flex-col justify-between h-full"> 
                         <p class="text-2xl md:text-4xl font-medium font-serif mb-5">100%</p>
-                        <div class="flex flex-col gap-2">
-                         <p class="text-xl md:text-2xl font-medium font-serif">Dedication</p>
-                         <p class="text-sm md:text-md md:mb-3 leading-6 font-serif">With sweat as their conductor and grit as their score, they play on, their dedication a relentless melody driving them towards the final triumphant chord.</p>
+                        <div class="flex flex-col gap-1">
+                         <p class="text-xl md:text-2xl font-medium font-serif mb-3">Dedication</p>
+                         <p class="text-sm md:text-[1rem] md:mb-3 leading-5 font-serif font-light text-[#BEBEBE]">With sweat as their conductor and grit as their score, they play on, their dedication a relentless melody driving them towards the final triumphant chord.</p>
                         </div>
                      </div>
                     <div class="grid grid-cols-2 gap-3 md:gap-5 ">
@@ -233,7 +240,7 @@
                             </div>
                          </div>
                         <div class="col-span-2 bg-[#E5E5E5] rounded-lg p-3 flex flex-col self-stretch"> 
-                            <p class="ext-2xl md:text-4xl font-medium mb-8 font-serif">100%</p>
+                            <p class="ext-2xl md:text-4xl font-medium mb-16 font-serif">100%</p>
                             <div class="flex flex-col gap-3">
                              <p class="text-xl md:text-2xl font-medium font-serif">Creativity</p>
                             </div>
@@ -284,17 +291,18 @@
                 </div> 
             </div> -->
 
-            <div class="md:grid grid-cols-3 gap-10 ">
+            <div class="md:grid grid-cols-3 gap-16 ">
                 <div class="col-span-1 ">
                     <div class=" fade-in-section flex flex-col mb-5">
-                        <span class="text-[#FF5906] text-sm font-serif tracking-[0.2em]">ABOUT FOXVISTA </span>
+                        <span class="text-[#FF5906] text-sm font-sans tracking-[0.2em]">ABOUT FOXVISTA </span>
                         <h4 class="text-3xl md:text-4xl lg:text-5xl font-medium text-primary">Curiosity 
                           <br class="hidden md:block">  & creativity</h4>
                     </div>
                 </div>  
                 <div class=" fade-in-section col-span-2">
+
                     <p class="text-black text-md lg:text-md font-normal mb-5 font-serif">
-                        Our work encompasses graphics and identity, strategy and positioning, products and packaging, exhibitions and installations, websites and digital experiences, advertising and communications, data visualizations and typefaces, sound and motion. Our 11 partners are all practicing designers, and whether working collaboratively or independently, they do so in friendship.    
+                        Foxvista is a multi-disciplinary, independently owned design studio.   Our work encompasses graphics and identity, strategy and positioning, products and packaging, exhibitions and installations, websites and digital experiences, advertising and communications, data visualizations and typefaces, sound and motion. Our 11 partners are all practicing designers, and whether working collaboratively or independently, they do so in friendship.    
                     </p>
                     <p class="text-black text-md lg:text-md font-normal mb-5 font-serif">
                         Our structure is unique. We are the design studio where the owners of the business are the creators of the work and serve as the primary contact for every client. This reflects our conviction that great design cannot happen without passion, intelligence and—above all—personal commitment, and is demonstrated by a portfolio that spans five decades, many industries, and clients of every size.  

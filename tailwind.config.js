@@ -27,7 +27,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],
-        serif: ['Poppins', 'sans-serif'],
+        serif: ['DM Sans', 'sans-serif'],
       },
       colors: {
         primary: '#101010',

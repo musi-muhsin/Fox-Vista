@@ -42,11 +42,11 @@
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  transition: ease 0.10s;
+  transition: ease-in-out 0.3s;
   position: fixed;
 }
 .main-tool-bar--scrolled {
-  animation: slideout 0.5s ease-out;
+  animation: slideout 1s ease-in-out;
   width: 70%;
   background-color:#101010;
   color: #000 !important;
@@ -195,53 +195,92 @@
   display: none;
 }
 
-.loader {
-  width: 48px;
-  height: 48px;
-  display: block;
-  margin: 15px auto;
+/* loader  */
+.typing-indicator {
+  width: 90px;
+  height: 40px;
   position: relative;
-  color: #FFF;
-  box-sizing: border-box;
-  animation: rotation_19 1s linear infinite;
+  z-index: 4;
 }
 
-.loader::after,
-.loader::before {
-  content: '';
-  box-sizing: border-box;
+.typing-circle {
+  width: 10px;
+  height: 10px;
   position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 0;
-  background-color: #FFF;
   border-radius: 50%;
-  animation: scale50 1s infinite ease-in-out;
-}
-
-.loader::before {
-  top: auto;
-  bottom: 0;
   background-color: #FF3D00;
-  animation-delay: 0.5s;
+  left: 15%;
+  transform-origin: 50%;
+  animation: typing-circle7124 0.5s alternate infinite ease;
 }
 
-@keyframes rotation_19 {
+@keyframes typing-circle7124 {
   0% {
-    transform: rotate(0deg);
+    top: 20px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    transform: scaleX(1.7);
+  }
+
+  40% {
+    height: 8px;
+    border-radius: 50%;
+    transform: scaleX(1);
   }
 
   100% {
-    transform: rotate(360deg);
+    top: 0%;
   }
 }
 
-@keyframes scale50 {
-  0%, 100% {
-    transform: scale(0);
+.typing-circle:nth-child(2) {
+  left: 45%;
+  animation-delay: 0.2s;
+}
+
+.typing-circle:nth-child(3) {
+  left: auto;
+  right: 15%;
+  animation-delay: 0.3s;
+}
+
+.typing-shadow {
+  width: 8px;
+  height: 7px;
+  border-radius: 50%;
+  background-color:#ff3c006a ;
+  position: absolute;
+  top: 28px;
+  transform-origin: 50%;
+  z-index: 3;
+  left: 15%;
+  filter: blur(1px);
+  animation: typing-shadow046 0.5s alternate infinite ease;
+}
+
+@keyframes typing-shadow046 {
+  0% {
+    transform: scaleX(1.5);
   }
 
-  50% {
-    transform: scale(1);
+  40% {
+    transform: scaleX(1);
+    opacity: 0.7;
   }
-} 
+
+  100% {
+    transform: scaleX(0.2);
+    opacity: 0.4;
+  }
+}
+
+.typing-shadow:nth-child(4) {
+  left: 45%;
+  animation-delay: 0.2s;
+}
+
+.typing-shadow:nth-child(5) {
+  left: auto;
+  right: 15%;
+  animation-delay: 0.3s;
+}
