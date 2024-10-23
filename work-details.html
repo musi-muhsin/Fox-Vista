@@ -53,33 +53,29 @@
         font-size: 18px;
         opacity: 1;
         transition: opacity 600ms ease;
-        cursor: grab;
       }
 
       .swiper-slide::before {
         content: "0" counter(list-slider);
         display: block;
         position: absolute;
-        width: fit-content;
+        width: 100px;
         left: 0;
         top: 0;
-        font-size: 50px;
+        font-size: 120px;
         font-weight: 600;
-        line-height: 1;
-        color: #ffffff;
+        line-height: 0.8;
+        font-family: "Roboto", sans-serif;
+        color: #ffeba7;
         transform: scale(0.5);
         opacity: 0;
         z-index: -1;
         pointer-events: none;
         transition: all 350ms ease;
-        background: #ff5906;
-        border-radius: 118px;
-        padding: 31px;
-        z-index: 9;
       }
 
       .swiper-slide-active::before {
-        opacity: 1;
+        opacity: 0.4;
         transform: scale(1);
       }
 
@@ -105,44 +101,36 @@
         width: 300px;
         height: 250px;
         position: absolute;
-        /* top: 40%; */
+        top: 25%;
         left: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         transition: opacity 350ms ease;
-        background: #101010;
-        padding: 20px;
-        height: fit-content;
-        bottom: 0;
-        border-radius: 15px;
-        gap: 15px;
       }
 
       .c-swiper__title {
         max-height: 100%;
-        font-size: 55px;
+        font-size: 64px;
         font-weight: 600;
+        text-shadow: 1px 1px 2px #000;
         text-align: left;
         pointer-events: none;
         transition: transform 500ms ease;
         transition-delay: 100ms;
         transform: translateY(-25%);
         z-index: 1;
-        color: #fff;
-        line-height: 1.2;
       }
 
       .c-swiper__link {
         position: relative;
-        /* max-width: 100px; */
+        max-width: 100px;
+        margin-left: 24px;
         color: #fff;
         text-decoration: none;
         transform: translateY(25%);
         transition: transform 500ms ease;
         transition-delay: 200ms;
-        font-size: 16px;
-        width: fit-content;
       }
 
       .c-swiper__link::after {
@@ -151,12 +139,8 @@
         position: absolute;
         bottom: -5px;
         left: 0;
-        width: 0;
+        width: 100%;
         background-color: #fff;
-        transition: width 0.3s ease;
-      }
-      .c-swiper__link:hover::after {
-        width: 50%;
       }
 
       .c-swiper__image-container {
@@ -174,7 +158,7 @@
       .swiper-pagination-bullet {
         width: 36px;
         height: 3px;
-        background-color: #ff5906;
+        background-color: #ffeba7;
         border-radius: 0;
       }
     </style>
@@ -345,12 +329,13 @@
               >Home</a
             >
             <a
-              href="services.html"
+              href="work.html"
               class="hover:text-white block m-10 text-3xl text-[#505050]"
               >Services</a
             >
-            <a href="work.html" class="text-white block m-10 text-3xl">Works</a>
-
+            <a href="services.html" class="text-white block m-10 text-3xl"
+              >Works</a
+            >
             <a
               href="about.html"
               class="hover:text-white block m-10 text-3xl font-sans text-[#505050]"
@@ -375,87 +360,8 @@
             <h5
               class="max-w-[200px] md:max-w-[400px] my-auto font-semibold md:flex flex-col text-white font-sans text-[2rem] md:text-[2.2rem] lg:text-[2.9rem] xl:text-[3.7rem] lg:leading-relaxed"
             >
-              Experience Our Service
+              Work Details
             </h5>
-          </div>
-        </div>
-
-        <div class="swiper-hotels-container pt-10 md:pt-24 pb-16">
-          <div
-            class="swiper w-full h-[600px] mr-0 items-center"
-            id="js-swiper-hotels"
-          >
-            <div
-              class="swiper-wrapper flex items-center counter-reset-list-slider"
-            >
-              <!-- ITEM 1 -->
-              <div class="swiper-slide fade-in-section">
-                <div class="c-swiper__text">
-                  <div class="c-swiper__title">Hotel Spa</div>
-
-                  <a href="work-details.html" class="c-swiper__link"
-                    >View Details</a
-                  >
-                </div>
-
-                <div class="c-swiper__image-container">
-                  <img
-                    src="https://images.pexels.com/photos/2373201/pexels-photo-2373201.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                    alt=""
-                  />
-                </div>
-              </div>
-
-              <!-- ITEM 2 -->
-              <div class="swiper-slide fade-in-section">
-                <div class="c-swiper__text">
-                  <div class="c-swiper__title">Hotel Urban</div>
-
-                  <a href="#" class="c-swiper__link">View Details</a>
-                </div>
-
-                <div class="c-swiper__image-container">
-                  <img
-                    src="https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                    alt=""
-                  />
-                </div>
-              </div>
-
-              <!-- ITEM 3 -->
-              <div class="swiper-slide fade-in-section">
-                <div class="c-swiper__text">
-                  <div class="c-swiper__title">Hotel Adults</div>
-
-                  <a href="#" class="c-swiper__link">View Details</a>
-                </div>
-
-                <div class="c-swiper__image-container">
-                  <img
-                    src="https://images.pexels.com/photos/6474917/pexels-photo-6474917.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                    alt=""
-                  />
-                </div>
-              </div>
-
-              <!-- ITEM 4 -->
-              <div class="swiper-slide">
-                <div class="c-swiper__text">
-                  <div class="c-swiper__title">Hotel Beach</div>
-
-                  <a href="#" class="c-swiper__link">View Details</a>
-                </div>
-
-                <div class="c-swiper__image-container">
-                  <img
-                    src="https://images.pexels.com/photos/1591361/pexels-photo-1591361.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
@@ -527,42 +433,6 @@
           el: ".swiper-pagination",
           clickable: true,
         },
-        mousewheel: {
-          invert: false,
-          speed: 800,
-        },
-        breakpoints: {
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 10,
-          },
-          480: {
-            slidesPerView: 1.5,
-            spaceBetween: 15,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 0,
-          },
-          1440: {
-            slidesPerView: 3,
-            spaceBetween: 0,
-          },
-        },
-      });
-
-      gsap.registerPlugin(ScrollTrigger);
-      ScrollTrigger.create({
-        trigger: "#js-swiper-hotels", // Target the Swiper section
-        start: "top 10%", // Pin when the section reaches the top
-        end: "+=90%%", // How long the pin should last
-        pin: true, // Pin the section in place
-        scrub: true, // Smooth scrolling effect
-        markers: false, // Enable markers for debugging (set to true if needed)
       });
     </script>
   </body>
