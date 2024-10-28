@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Website;
 
 use App\Http\Controllers\Controller;
+use App\Models\Project;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -17,12 +18,15 @@ class PageController extends Controller
     }
     public function work()
     {
-        return view('website.pages.work');
+        $projects = Project::where('status', 1)->orderBy('id', 'desc')->get();
+
+        return view('website.pages.work', compact('projects'));
     }
 
-    public function workDetails()
+    public function workDetails($id)
     {
-        return view('website.pages.work-details');
+        $project = Project::find($id);
+        return view('website.pages.work-details', compact('project'));
     }
     public function about()
     {

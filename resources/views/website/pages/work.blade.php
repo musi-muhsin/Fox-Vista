@@ -315,21 +315,23 @@
             <div class="swiper-hotels-container pt-10 md:pt-24 pb-16">
                 <div class="swiper w-full h-[600px] mr-0 items-center" id="js-swiper-hotels">
                     <div class="swiper-wrapper flex items-center counter-reset-list-slider">
-                        <!-- ITEM 1 -->
-                        <div class="swiper-slide fade-in-section">
-                            <div class="c-swiper__text">
-                                <div class="c-swiper__title">Hotel Spa</div>
+                        <!-- ITEMS -->
+                        @foreach ($projects as $project)
+                            <div class="swiper-slide fade-in-section">
+                                <div class="c-swiper__text">
+                                    <div class="c-swiper__title">{{ @$project->title }}</div>
 
-                                <a href="{{ route('work.details') }}" class="c-swiper__link">View Details</a>
+                                    <a href="{{ route('work.details', ['id' => $project->id]) }}"
+                                        class="c-swiper__link">View Details</a>
+                                </div>
+
+                                <div class="c-swiper__image-container">
+                                    <img src="{{ asset('uploads/projects' . '/' . @$project->thumbnail) }}"
+                                        alt="" />
+                                </div>
                             </div>
-
-                            <div class="c-swiper__image-container">
-                                <img src="https://images.pexels.com/photos/2373201/pexels-photo-2373201.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                    alt="" />
-                            </div>
-                        </div>
-
-                        <!-- ITEM 2 -->
+                        @endforeach
+                        {{-- <!-- ITEM 2 -->
                         <div class="swiper-slide fade-in-section">
                             <div class="c-swiper__text">
                                 <div class="c-swiper__title">Hotel Urban</div>
@@ -369,7 +371,7 @@
                                 <img src="https://images.pexels.com/photos/1591361/pexels-photo-1591361.jpeg?auto=compress&cs=tinysrgb&w=1600"
                                     alt="" />
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
 
                     <div class="swiper-pagination"></div>

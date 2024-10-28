@@ -99,7 +99,7 @@ class ProjectController extends Controller
         // ]);
         $project = Project::find($request->id);
         $project->title = $request->title;
-        $$project->description = $request->description;
+        $project->description = $request->description;
         $project->status = $request->status;
 
         if ($request->hasFile("thumbnail")) {
