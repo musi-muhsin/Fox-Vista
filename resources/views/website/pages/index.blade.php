@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="Fox Vista|Foxvista|Foxvista|App Development company in Trivandrum|Website development company in Trivandrum|Best app development Company in Trivandrum|Best Webdesigning Company in Trivandrum|Best Web Development company in Trivandrum|Best App Development company in Kerala|Best Web development company in Kerala|Digital Marketing Agency In Trivandrum|Ui/Ux Development in Trivandrum|Product designing In Trivandrum">
+    <meta name="description"
+        content="Foxvista - The Best Company in Trivandrum Focusing on App Development,Web development,Web Designing, Ui /Ux & Digital Marketing. Best Web Development Company in Trivandrum,Best App Development Company in Trivandrum,Best Web designing Company in Trivandrum,Best Digital Marketing Service in Trivandrum">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicon.png') }}">
+    <title>Fox Vista || Designing & Developing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+
+</head>
+
+<body class="bg-[#F8F8F8] relative">
+    <div class="fixed z-[999] w-full h-screen flex items-center justify-center bg-black" id="loadingDiv">
+        <div class="typing-indicator">
+            <div class="typing-circle"></div>
+            <div class="typing-circle"></div>
+            <div class="typing-circle"></div>
+            <div class="typing-shadow"></div>
+            <div class="typing-shadow"></div>
+            <div class="typing-shadow"></div>
+        </div>
+    </div>
+
+    <div class="container  bg-transparent">
+        <header class="main-tool-bar z-[99]  w-full flex items-center justify-between ">
+            <div class="flex items-center justify-between w-full py-3">
+                <a href="{{ route('home') }}">
+                    <img src="{{ asset('images/logo.png') }}" class="w-[2.5rem] md:w-[3rem]" alt="">
+                </a>
+                <button class="open-icon md:hidden">
+                    <svg width="40" height="40" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="4">
+                            <path d="M7.94971 11.9497H39.9497" />
+                            <path d="M7.94971 23.9497H39.9497" />
+                            <path d="M7.94971 35.9497H39.9497" />
+                        </g>
+                    </svg>
+                </button>
+                <div
+                    class=" bg-white md:bg-transparent w-full  top-14 md:top-0 hidden  md:flex flex-col md:flex-row items-center justify-center gap-5 ">
+                    <!-- <div class="dropdown py-8">
+                  <a href="#" class="hover-group font-sans text-[#505050] flex items-center gap-2 transition">
+                    <span class="text">Services</span>
+                    <svg class="icon fill-[#505050] " width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 16a1 1 0 0 1-.64-.23l-6-5a1 1 0 1 1 1.28-1.54L12 13.71l5.36-4.32a1 1 0 0 1 1.41.15a1 1 0 0 1-.14 1.46l-6 4.83A1 1 0 0 1 12 16"/>
+                    </svg>
+                  </a>
+                  <div class="dropdown-content absolute px-10 pt-9 pb-5 flex overflow-hidden">
+                      <div class="container grid grid-cols-2">
+                          <div class="my-auto">
+                              <div class="font-sans text-white text-5xl leading-[1.2]">
+                                 <span>
+                                  Elevate Your
+                                 </span>
+                                 <span>
+                                  Brand Unleash
+                                 </span>
+                                 <span>
+                                  its Inner Superhero
+                                 </span>
+                              </div>
+                            </div>
+                            <div class=" grid grid-cols-2 grid-rows-2 gap-5">
+                              <div class="flex flex-col gap-4">
+                                  <h6 class="text-white font-sans font-semibold text-2xl ">Branding</h6>
+                                  <ul class="text-white font-sans flex flex-col gap-2">
+                                      <li>Brand Consulting</li>
+                                      <li>Brand Identity</li>
+                                      <li>Product design</li>
+                                      <li>Graphic Design</li>
+                                      <li>Motion Graphics</li>
+                                  </ul>
+                              </div>
+                              <div class="flex flex-col gap-4">
+                                  <h6 class="text-white font-sans font-semibold text-2xl ">Technology</h6>
+                                  <ul class="text-white font-sans flex flex-col gap-2">
+                                      <li>Web Development</li>
+                                      <li>Mobile App Development</li>
+                                      <li>E-commerce</li>
+                                  </ul>
+                              </div>
+                              <div class="flex flex-col gap-4">
+                                  <h6 class="text-white font-sans font-semibold text-2xl ">Experience Design</h6>
+                                  <ul class="text-white font-sans flex flex-col gap-2">
+                                      <li>UI/UX Design</li>
+                                      <li>Web Experience</li>
+                                      <li>Mobile Experience</li>
+                                      <li>Commerce Experience</li>
+                                  </ul>
+                              </div>
+                              <div class="flex flex-col gap-4">
+                                  <h6 class="text-white font-sans font-semibold text-2xl ">Digital Marketing</h6>
+                                  <ul class="text-white font-sans flex flex-col gap-2">
+                                      <li>Search Engine Optimization</li>
+                                      <li>Social Media Managment</li>
+                                      <li>Performance Marketing</li>
+                                      <li>Analytics</li>
+                                  </ul>
+                              </div>
+                         
+                            </div>
+                      </div>
+                 
+                  </div>
+                </div> -->
+                    <a href="{{ route('home') }}" class="text-white ">Home</a>
+                    <a href="{{ route('services') }}" class="hover:text-white font-sans text-[#505050] ">Services</a>
+                    <a href="{{ route('work') }}" class="hover:text-white font-sans  text-[#505050] ">Works</a>
+                    <a href="{{ route('about') }}" class="hover:text-white font-sans text-[#505050] ">About</a>
+                    <a href="{{ route('contact') }}" class="hover:text-white font-sans text-[#505050] ">Contact</a>
+                </div>
+                <a href="{{ route('contact') }}"
+                    class="hidden md:block text-white font-sans md:w-[200px] lg:w-[150px]">Ask for a
+                    quote</a>
+            </div>
+            <!-- mobile menu  -->
+            <div id="overlay"
+                class="md:hidden fixed top-0 left-0 z-[9999] flex items-center h-screen w-full bg-black text-white">
+                <button class="absolute right-5 top-5 close-icon ">
+                    <svg width="40" height="40" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#fff" fill-rule="evenodd"
+                            d="M4.28 3.22a.75.75 0 0 0-1.06 1.06L6.94 8l-3.72 3.72a.75.75 0 1 0 1.06 1.06L8 9.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L9.06 8l3.72-3.72a.75.75 0 0 0-1.06-1.06L8 6.94z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <nav>
+                    <a href="{{ route('home') }}" class="text-white block m-10 text-3xl">Home</a>
+                    <a href="{{ route('services') }}"
+                        class="hover:text-white block m-10 text-3xl text-[#505050]">Services</a>
+                    <a href="{{ route('work') }}"
+                        class="hover:text-white block m-10 text-3xl text-[#505050]">Works</a>
+                    <a href="{{ route('about') }}"
+                        class="hover:text-white block m-10 text-3xl font-sans text-[#505050]">About</a>
+                    <a href="{{ route('contact') }}"
+                        class="hover:text-white block m-10 text-3xl font-sans text-[#505050]">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+    </div>
+
+    <div id="smooth-content" class="overflow-hidden w-100  ">
+        <!-- hero  -->
+
+        <div class="bg-primary h-screen relative overflow-hidden ">
+            <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
+                <source src="{{ asset('images/hero-main.mp4') }}" type="video/mp4">
+            </video>
+            <div class="container my-auto h-screen grid items-center">
+                <div class="flex flex-col gap-16 md:gap-20  will-change-transform" data-speed="clamp(0.5)">
+                    <h1
+                        class="hidden md:flex flex-col text-white font-sans text-[38px]  md:text-[3.2rem] lg:text-[3.5rem] xl:text-8xl lg:leading-relaxed">
+                        <span class="line md:h-[80px] xl:h-[105px] relative overflow-hidden">
+                            <span class="absolute">
+                                Innovation Sparks,
+                            </span>
+                        </span>
+                        <span class="line md:h-[80px] xl:h-[105px] relative overflow-hidden">
+                            <span class="absolute">
+                                Brands Ignite.
+                            </span>
+                        </span>
+                    </h1>
+                    <h1 class="flex md:hidden text-white font-sans text-[3rem] leading-[1.2] md:leading-relaxed">
+                        Innovation sparks,
+                        brands ignite.
+                    </h1>
+                    <div class="">
+                        <p
+                            class="font-serif hidden md:flex flex-col md:text-left text-lg md:text-2xl lg:text-3xl font-normal text-[#888888] w-[16rem] md:w-screen lg:max-w-3xl lg:ml-auto ">
+                            <span class="line h-[42px] relative overflow-hidden">
+                                <span class="absolute ">
+                                    Creating top-notch branding and website design
+                                </span>
+                            </span>
+                            <span class="line h-[42px] relative overflow-hidden">
+                                <span class="absolute ">
+                                    for experts seeking a premium representation
+                                </span>
+                            </span>
+                            <span class="line h-[50px] relative overflow-hidden">
+                                <span class="absolute ">
+                                    of your brand.
+                                </span>
+                            </span>
+                        </p>
+                        <p class="font-serif  flex md:hidden text-2xl font-medium text-[#888888]">
+                            Creating top-notch branding and website design for experts seeking a premium representation
+                            of your brand.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="hidden md:block bg-primary">
+            <div class="h-screen flex justify-center w-full items-center xxl:px-48">
+                <div class="text text-5xl font-light">
+                    <p class="font-serif font-extralight reveal-type" data-bg-color="#353535" data-fg-color="#fff">
+                        Picture a world where technology <br>
+                        effortlessly elevates your everyday <br>
+                        experiences. Our purpose is to turn <br>
+                        this vision into a vibrant reality!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class=" mt-24 md:mb-16 will-change-transform" data-speed="clamp(1)">
+                <div class="fade-in-section flex flex-col gap-6 mb-5 md:mb-16">
+                    <div class="text-3xl md:text-4xl lgtext-5xl font-medium text-primary">
+                        Service
+                    </div>
+                    <p class="text-xl md:text-2xl font-serif font-normal text-[#888888] max-w-3xl ">
+                        Turning your innovative ideas into
+                        the high-quality services you deserve.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-3 md:grid-rows-2 gap-8">
+                    <div class="md:col-span-2 flex items-end bg-primary/50 bg-blend-multiply rounded-lg h-64 p-8 relative bg-cover bg-no-repeat bg-center"
+                        style="background-image: url('{{ asset('images/service-bg-1.jpg') }}');">
+                        <div class="fade-in-section  flex flex-col gap-3  ">
+                            <div class="text-white text-xl xl:text-2xl font-serif font-medium">Branding</div>
+                            <div class="text-white text-md lg:text-lg font-sans font-normal max-w-[21rem]">Where Words
+                                Weave Identity
+                                Crafting Brands That Speak Volumes.</div>
+                        </div>
+                    </div>
+                    <div class="md:col-span-1 flex items-end bg-primary/60 bg-blend-multiply rounded-lg h-64 p-8 relative bg-cover bg-no-repeat bg-center"
+                        style="background-image: url('{{ asset('images/service-bg-2.jpg') }}');">
+                        <div class="fade-in-section  flex flex-col gap-3  ">
+                            <div class="text-white text-xl xl:text-2xl font-serif font-medium">UI /UX Design</div>
+                            <div class="text-white text-md lg:text-lg font-sans font-normal ">Crafting Experiences That
+                                Make
+                                Pixels Swoon and Users Croon</div>
+                        </div>
+                    </div>
+                    <div class="md:col-span-1 flex items-end bg-[#FF5906] rounded-lg h-64 p-8 relative">
+                        <div class="fade-in-section  flex flex-col gap-3  ">
+                            <div class="text-white text-xl xl:text-2xl font-serif font-medium">Web and Mobile App
+                                Development</div>
+                            <div class="text-white text-md lg:text-lg font-sans font-normal ">Transforming Ideas into
+                                Seamless Digital Experiences</div>
+                        </div>
+                    </div>
+                    <div class="md:col-span-2 flex items-end bg-primary/60 bg-blend-multiply rounded-lg h-64 p-8 relative bg-cover bg-no-repeat bg-center"
+                        style="background-image: url('{{ asset('images/service-bg-3.jpg') }}');">
+                        <div class="fade-in-section  flex flex-col gap-3  ">
+                            <div class="text-white text-xl xl:text-2xl font-serif font-medium">Digital Marketing</div>
+                            <div class="text-white text-md lg:text-lg font-sans font-normal  max-w-[21rem]">Where
+                                Algorithms Party
+                                and Memes Seal the Deals</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" md:mb-10 will-change-transform" data-speed="">
+                <div class="fade-in-section pt-8 md:py-8 flex flex-col  gap-6 mb-10 md:mb-16">
+                    <div class="text-3xl md:text-4xl  font-medium text-primary">
+                        Work
+                    </div>
+                    <p class="font-serif text-xl md:text-2xl font-normal text-[#888888] max-w-3xl ">
+                        Craft a masterpiece that slams the brakes
+                        on your ideal audience, leaving them
+                        wondering where on earth you've been hiding all their lives
+                    </p>
+                </div>
+                <div class="sm:grid grid-cols-1 w-full mb-24">
+                    <div class="fade-in-section max-w-4xl ml-auto relative">
+                        <img src="{{ asset('images/project.png') }}" class="" alt="">
+                        <div
+                            class="absolute -bottom-8 lg:bottom-10 left-[50%] lg:-left-24 transform translate-x-[-50%] lg:translate-x-0  bg-white p-1 md:p-3 rounded-full flex items-center gap-5 w-max shadow-md md:shadow-xl shadow-black/10 ">
+                            <div class="flex flex-col items-start ps-7">
+                                <div class="text-md md:text-lg font-serif font-medium text-primary">
+                                    INFUUSE
+                                </div>
+                                <p class="text-sm md:text-md font-medium font-serif text-[#FF5906] ">
+                                    Branding, UI/UX
+                                </p>
+                            </div>
+                            <a href="#"
+                                class="rounded-full border border-black border-dashed w-12 md:w-20 h-12 md:h-20 flex items-center justify-center">
+                                <svg class="w-[10px] h-[30px] md:w-[20px] md:h-[46px]"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 43" fill="none">
+                                    <path
+                                        d="M0.878714 41.7083C-0.292905 40.6713 -0.292905 38.9901 0.878714 37.9531L19.7573 21.2431L0.878713 4.53304C-0.292906 3.49606 -0.292906 1.81478 0.878712 0.777805C2.05027 -0.259121 3.94975 -0.259121 5.12131 0.777805L26.1213 19.3654C27.2929 20.4024 27.2929 22.0837 26.1213 23.1207L5.12131 41.7083C3.94975 42.7453 2.05027 42.7453 0.878714 41.7083Z"
+                                        fill="#101010" />
+                                </svg></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="swiper md:mb-12  sample-slider will-change-transform" data-speed="1.1">
+            <div class="swiper-wrapper ">
+                <div class="swiper-slide px-3 ">
+                    <div class="pt-24 pb-16 md:py-48">
+                        <div class="md:grid grid-cols-3 gap-10 lg:px-12 xl:px-20 bg-[#D9D9D9]">
+                            <div class="col-span-1 relative before:absolute before:w-[150%] before:-left-[40%] md:before:left-0 md:before:h-[180%] md:before:w-[100%] before:bg-[#FF5906] md:before:-top-[40%] before:-z-10">
+                                <img class="h-full w-full object-cover z-50" src="/images/service-bg-1.jpg">
+                            </div>
+                            <div class="col-span-2 px-5 sm:px-10 md:px-0 py-10">
+                                <div class="flex flex-col mb-5">
+                                    <h4 class="font-normal text-black text-xl border-b w-fit border-[#FF5906]">AJAY AV</h4>
+                                    <span class="text-[#FF5906] text-sm ">Founder </span>
+                                </div>
+                                <p class="text-black text-md lg:text-md font-sans font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        
+                            </div>
+                            </div>
+                      </div>
+                </div>
+                <div class="swiper-slide px-3 ">
+                    <div class="pt-24 pb-16 md:py-48">
+                        <div class="md:grid grid-cols-3 gap-10 lg:px-12 xl:px-20 bg-[#D9D9D9]">
+                            <div class="col-span-1 relative before:absolute before:w-[150%] before:-left-[40%] md:before:left-0 md:before:h-[180%] md:before:w-[100%] before:bg-[#FF5906] md:before:-top-[40%] before:-z-10">
+                                <img class="h-full w-full object-cover z-50" src="/images/service-bg-1.jpg">
+                            </div>
+                            <div class="col-span-2 px-5 sm:px-10 md:px-0 py-10">
+                                <div class="flex flex-col mb-5">
+                                    <h4 class="font-normal text-black text-xl border-b w-fit border-[#FF5906]">AJAY AV</h4>
+                                    <span class="text-[#FF5906] text-sm ">Founder </span>
+                                </div>
+                                <p class="text-black text-md lg:text-md font-sans font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        
+                            </div>
+                            </div>
+                      </div>
+                </div>
+                <div class="swiper-slide px-3 ">
+                    <div class="pt-24 pb-16 md:py-48">
+                        <div class="md:grid grid-cols-3 gap-10 lg:px-12 xl:px-20 bg-[#D9D9D9]">
+                            <div class="col-span-1 relative before:absolute before:w-[150%] before:-left-[40%] md:before:left-0 md:before:h-[180%] md:before:w-[100%] before:bg-[#FF5906] md:before:-top-[40%] before:-z-10">
+                                <img class="h-full w-full object-cover z-50" src="/images/service-bg-1.jpg">
+                            </div>
+                            <div class="col-span-2 px-5 sm:px-10 md:px-0 py-10">
+                                <div class="flex flex-col mb-5">
+                                    <h4 class="font-normal text-black text-xl border-b w-fit border-[#FF5906]">AJAY AV</h4>
+                                    <span class="text-[#FF5906] text-sm ">Founder </span>
+                                </div>
+                                <p class="text-black text-md lg:text-md font-sans font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        
+                            </div>
+                            </div>
+                      </div>
+                </div>
+                <div class="swiper-slide px-3 ">
+                    <div class="py-24 md:py-48">
+                        <div class="md:grid grid-cols-3 gap-10 lg:px-12 xl:px-20 bg-[#D9D9D9]">
+                            <div class="col-span-1 relative before:absolute before:w-[150%] before:-left-[40%] md:before:left-0 md:before:h-[180%] md:before:w-[100%] before:bg-[#FF5906] md:before:-top-[40%] before:-z-10">
+                                <img class="h-full w-full object-cover z-50" src="/images/service-bg-1.jpg">
+                            </div>
+                            <div class="col-span-2 px-5 sm:px-10 md:px-0 py-10">
+                                <div class="flex flex-col mb-5">
+                                    <h4 class="font-normal text-black text-xl border-b w-fit border-[#FF5906]">AJAY AV</h4>
+                                    <span class="text-[#FF5906] text-sm ">Founder </span>
+                                </div>
+                                <p class="text-black text-md lg:text-md font-sans font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        
+                            </div>
+                            </div>
+                      </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div> -->
+
+        </div>
+
+        <!-- footer  -->
+        <footer class="fade-in-section bg-primary will-change-transform" data-speed="1.1">
+            <div class="container py-12">
+                <div class="md:flex justify-between items-end mb-10 md:mb-20">
+                    <div class="flex flex-col items-center md:items-start gap-3">
+                        <img src="{{ asset('images/logo.svg') }}" class="w-28 md:w-52" alt="">
+                        <nav class=" flex justify-between md:justify-center gap-4 mb-8 md:mb-3 ">
+                            <a href="#" class="text-white font-sans text-sm font-medium">Home</a>
+                            <a href="#" class="text-white font-sans text-sm font-medium">Service</a>
+                            <a href="#" class="text-white font-sans text-sm font-medium">Works</a>
+                            <a href="#" class="text-white font-sans text-sm font-medium">Contact</a>
+                        </nav>
+                    </div>
+
+                    <div class="text-center ">
+                        <p class="text-xl md:text-2xl lg:text-3xl font-normal text-white mb-3">Start a New
+                            Project......</p>
+                        <p class="text-2xl md:text-3xl lg:text-4xl font-bold text-white uppercase">Let’s Talk</p>
+                    </div>
+                </div>
+                <div class=" text-white font-sans text-sm font-medium text-center">
+                    © FoxVista2023 | All rights reserved. | <a href="#">Privacy Policy</a>
+                </div>
+
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="{{ asset('src/script.js') }}"></script>
+    <script src="{{ asset('src/script.js') }}"></script>
+
+    <!-- <script>
+        const swiper = new Swiper('.sample-slider', {
+            loop: true,
+            speed: 3000,
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+    </script> -->
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger)
+        const splitTypes = document.querySelectorAll('.reveal-type')
+        splitTypes.forEach((char, i) => {
+
+            const bg = char.dataset.bgColor
+            const fg = char.dataset.fgColor
+
+            const text = new SplitType(char, {
+                types: 'chars'
+            })
+            gsap.fromTo(text.chars, {
+                color: bg,
+            }, {
+                color: fg,
+                duration: 0.3,
+                stagger: 0.02,
+                scrollTrigger: {
+                    trigger: char,
+                    start: 'top 80%',
+                    end: 'top 20%',
+                    scrub: true,
+                    markers: false,
+                    toggleActions: 'play play reverse reverse'
+                }
+            })
+        })
+    </script>
+
+    <script></script>
+
+</body>
+
+</html>
