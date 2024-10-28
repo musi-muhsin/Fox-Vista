@@ -8,14 +8,14 @@
         content="Fox Vista|Foxvista|Foxvista|App Development company in Trivandrum|Website development company in Trivandrum|Best app development Company in Trivandrum|Best Webdesigning Company in Trivandrum|Best Web Development company in Trivandrum|Best App Development company in Kerala|Best Web development company in Kerala|Digital Marketing Agency In Trivandrum|Ui/Ux Development in Trivandrum|Product designing In Trivandrum" />
     <meta name="description"
         content="Foxvista - The Best Company in Trivandrum Focusing on App Development,Web development,Web Designing, Ui /Ux & Digital Marketing. Best Web Development Company in Trivandrum,Best App Development Company in Trivandrum,Best Web designing Company in Trivandrum,Best Digital Marketing Service in Trivandrum" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicon.png') }}" />
     <title>Fox Vista || Designing & Developing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet" />
-    <link href="/public/style.css" rel="stylesheet" />
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <style>
         .swiper {
@@ -168,7 +168,7 @@
         <header class="main-tool-bar z-[99] w-full flex items-center justify-between">
             <div class="flex items-center justify-between w-full py-3">
                 <a href="{{ route('home') }}">
-                    <img src="/images/logo.png" class="w-[2.5rem] md:w-[3rem]" alt="" />
+                    <img src="{{ asset('images/logo.png') }}" class="w-[2.5rem] md:w-[3rem]" alt="" />
                 </a>
                 <button class="open-icon md:hidden">
                     <svg width="40" height="40" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
@@ -301,7 +301,7 @@
         <div class="container py-12">
             <div class="md:flex justify-between items-end mb-10 md:mb-20">
                 <div class="flex flex-col items-center md:items-start gap-3">
-                    <img src="/images/logo.svg" class="w-28 md:w-52" alt="" />
+                    <img src="{{ asset('images/logo.svg') }}" class="w-28 md:w-52" alt="" />
                     <nav class="flex justify-between md:justify-center gap-4 mb-8 md:mb-3">
                         <a href="#" class="text-white font-sans text-sm font-medium">Home</a>
                         <a href="#" class="text-white font-sans text-sm font-medium">Service</a>
@@ -330,8 +330,8 @@
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
-    <script src="/src/script.js"></script>
-    <script src="/src/sidebar.js"></script>
+    <script src="{{ asset('src/script.js') }}"></script>
+    <script src="{{ asset('src/script.js') }}"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>

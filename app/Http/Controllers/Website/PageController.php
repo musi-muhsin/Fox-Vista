@@ -19,6 +19,11 @@ class PageController extends Controller
     {
         return view('website.pages.work');
     }
+
+    public function workDetails()
+    {
+        return view('website.pages.work-details');
+    }
     public function about()
     {
         return view('website.pages.about');

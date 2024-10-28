@@ -320,7 +320,7 @@
                             <div class="c-swiper__text">
                                 <div class="c-swiper__title">Hotel Spa</div>
 
-                                <a href="work-details.html" class="c-swiper__link">View Details</a>
+                                <a href="{{ route('work.details') }}" class="c-swiper__link">View Details</a>
                             </div>
 
                             <div class="c-swiper__image-container">
