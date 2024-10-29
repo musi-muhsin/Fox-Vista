@@ -26,10 +26,10 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::get('admin/dashboard', [App\Http\Controllers\HomeController::class, 'dashboard'])->name('admin.dashboard');
 
-    Route::get('/projects', [ProjectController::class, 'index'])->name('admin.projects.index');
-    Route::get('/projects/create', [ProjectController::class, 'create'])->name('admin.projects.create');
-    Route::post('/projects/store', [ProjectController::class, 'store'])->name('admin.projects.store');
-    Route::get('/projects/edit/{id}', [ProjectController::class, 'edit'])->name('admin.projects.edit');
-    Route::post('/projects/update', [ProjectController::class, 'update'])->name('admin.projects.update');
-    Route::get('/projects/delete/{id}', [ProjectController::class, 'destroy'])->name('admin.projects.delete');
+    Route::get('admin/projects', [ProjectController::class, 'index'])->name('admin.projects.index');
+    Route::get('admin/projects/create', [ProjectController::class, 'create'])->name('admin.projects.create');
+    Route::post('admin/projects/store', [ProjectController::class, 'store'])->name('admin.projects.store');
+    Route::get('admin/projects/edit/{id}', [ProjectController::class, 'edit'])->name('admin.projects.edit');
+    Route::post('admin/projects/update', [ProjectController::class, 'update'])->name('admin.projects.update');
+    Route::get('admin/projects/delete/{id}', [ProjectController::class, 'destroy'])->name('admin.projects.delete');
 });
