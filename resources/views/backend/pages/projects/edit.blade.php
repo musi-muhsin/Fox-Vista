@@ -71,21 +71,21 @@
                                         @endif
                                     </div>
                                     <div class="col-md-6 form-group">
-                                        <label for="thumbnail">Image (1) <span class="text-danger"></span></label>
+                                        <label for="thumbnail">Image<span class="text-danger"></span></label>
                                         <input type="file" name="image_1" id="image_1" class="form-control">
                                         @if (!empty($project->image_1))
                                             <img src="{{ asset('uploads/projects' . '/' . $project->image_1) }}"
                                                 alt="" width="150px" height="150px">
                                         @endif
                                     </div>
-                                    <div class="col-md-6 form-group">
+                                    {{-- <div class="col-md-6 form-group">
                                         <label for="thumbnail">Image (2) <span class="text-danger"></span></label>
                                         <input type="file" name="image_2" id="image_2" class="form-control">
                                         @if (!empty($project->image_2))
                                             <img src="{{ asset('uploads/projects' . '/' . $project->image_2) }}"
                                                 alt="" width="150px" height="150px">
                                         @endif
-                                    </div>
+                                    </div> --}}
 
                                     <div class="col-md-12 form-group mt-3 text-right">
                                         <button type="submit" class="btn btn-primary">Update</button>

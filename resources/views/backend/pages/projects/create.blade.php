@@ -63,13 +63,13 @@
                                         <input type="file" name="thumbnail" id="thumbnail" class="form-control">
                                     </div>
                                     <div class="col-md-6 form-group">
-                                        <label for="thumbnail">Image (1) <span class="text-danger"></span></label>
+                                        <label for="thumbnail">Image <span class="text-danger"></span></label>
                                         <input type="file" name="image_1" id="image_1" class="form-control">
                                     </div>
-                                    <div class="col-md-6 form-group">
+                                    {{-- <div class="col-md-6 form-group">
                                         <label for="thumbnail">Image (2) <span class="text-danger"></span></label>
                                         <input type="file" name="image_2" id="image_2" class="form-control">
-                                    </div>
+                                    </div> --}}
 
                                     <div class="col-md-12 form-group mt-3 text-right">
                                         <button type="submit" class="btn btn-success">Save</button>
