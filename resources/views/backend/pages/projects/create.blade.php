@@ -45,6 +45,11 @@
                                         <input type="text" class="form-control" name="title" id="title"
                                             placeholder="Enter Title" value="{{ old('title') }}">
                                     </div>
+                                    <div class="col-md-6 form-group">
+                                        <label for="name">Section</label>
+                                        <input type="text" class="form-control" name="section" id="section"
+                                            placeholder="Enter section" value="{{ old('section') }}">
+                                    </div>
 
                                     <div class="col-md-12 form-group">
                                         <label for="desc">Description</label>

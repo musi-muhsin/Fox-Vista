@@ -45,6 +45,7 @@ class ProjectController extends Controller
         $project->title = $request->title;
         $project->status = $request->status;
         $project->description = $request->description;
+        $project->section = $request->section;
         if ($request->hasFile("thumbnail")) {
             $file = $request->file("thumbnail");
             $imageName = time() . rand(1, 99) . '.' .  $file->extension();
@@ -100,6 +101,7 @@ class ProjectController extends Controller
         $project = Project::find($request->id);
         $project->title = $request->title;
         $project->description = $request->description;
+        $project->section = $request->section;
         $project->status = $request->status;
 
         if ($request->hasFile("thumbnail")) {

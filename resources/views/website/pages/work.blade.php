@@ -319,11 +319,12 @@
                         @foreach ($projects as $project)
                             <div class="swiper-slide fade-in-section">
                                 <div class="c-swiper__text">
-                                    <div class="c-swiper__title">{{ @$project->title }}</div>
-
                                     <a href="{{ route('work.details', ['id' => $project->id]) }}"
-                                        class="c-swiper__link">View Details</a>
+                                        class="c-swiper__link">
+                                        <div class="c-swiper__title">{{ @$project->title }}</div>
+                                        {{ $project->section }}
                                 </div>
+                                </a>
 
                                 <div class="c-swiper__image-container">
                                     <img src="{{ asset('uploads/projects' . '/' . @$project->thumbnail) }}"
