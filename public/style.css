@@ -2182,3 +2182,7 @@ video {
     font-size: 3.7rem;
   }
 }
+
+.rightSide{
+  right: -6rem;
+}
