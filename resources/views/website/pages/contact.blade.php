@@ -153,11 +153,14 @@
         <div id="smooth-content" class="overflow-visible w-100  ">
             <!-- hero  -->
 
-            <div class="bg-primary h-[80vh] relative overflow-hidden bg-cover bg-center"
-                style="background-image: url('images/contact-bg.png');">
-                <div class="container h-[80vh] flex items-center ">
-                    <h5 class="text-white my-auto font-normal text-4xl">CONTACT US</h5>
+
+            <div class="bg-primary h-[60vh] relative overflow-hidden flex ">
+                <div class="absolute right-0 bottom-0">
+                    <img src="{{ asset('images/India.svg') }}" alt="">
                 </div>
+
+                <h5 class=" container text-white my-auto font-normal text-4xl">CONTACT US</h5>
+
 
             </div>
 

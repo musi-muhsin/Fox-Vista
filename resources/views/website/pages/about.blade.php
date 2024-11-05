@@ -154,7 +154,7 @@
 
             <div class="bg-primary h-screen relative overflow-hidden ">
                 <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
-                    <source src="{{ asset('images/hero-video.mp4') }}" type="video/mp4">
+                    <source src="{{ asset('images/hero-main.mp4') }}" type="video/mp4">
                 </video>
                 <div class="container my-auto h-screen grid items-center">
                     <div class="flex flex-col gap-16 md:gap-20  will-change-transform" data-speed="clamp(0.5)">
