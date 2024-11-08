@@ -8,7 +8,7 @@
         content="Fox Vista|Foxvista|Foxvista|App Development company in Trivandrum|Website development company in Trivandrum|Best app development Company in Trivandrum|Best Webdesigning Company in Trivandrum|Best Web Development company in Trivandrum|Best App Development company in Kerala|Best Web development company in Kerala|Digital Marketing Agency In Trivandrum|Ui/Ux Development in Trivandrum|Product designing In Trivandrum">
     <meta name="description"
         content="Foxvista - The Best Company in Trivandrum Focusing on App Development,Web development,Web Designing, Ui /Ux & Digital Marketing. Best Web Development Company in Trivandrum,Best App Development Company in Trivandrum,Best Web designing Company in Trivandrum,Best Digital Marketing Service in Trivandrum">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/FoxVIsta_FavIcon.svg') }}">
     <title>Fox Vista | See The Future</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -95,11 +95,11 @@
                 </button>
                 <div
                     class="bg-white md:bg-transparent w-full top-14 md:top-0 hidden md:flex flex-col md:flex-row items-center justify-center gap-5">
-                    <a href="{{ route('home') }}" class="text-white">Home</a>
+                    <a href="{{ route('home') }}" class="hover:text-white font-sans text-[#505050]">Home</a>
                     <a href="{{ route('services') }}" class="hover:text-white font-sans text-[#505050]">Services</a>
                     <a href="{{ route('work') }}" class="hover:text-white font-sans text-[#505050]">Works</a>
                     <a href="{{ route('about') }}" class="hover:text-white font-sans text-[#505050]">About</a>
-                    <a href="{{ route('contact') }}" class="hover:text-white font-sans text-[#505050]">Contact</a>
+                    <a href="{{ route('contact') }}" class="text-white font-sans text-[#505050]">Contact</a>
                 </div>
                 <a href="{{ route('contact') }}"
                     class="hidden md:block text-white font-sans md:w-[200px] lg:w-[150px]">Ask for a
@@ -116,7 +116,7 @@
                     </svg>
                 </button>
                 <nav>
-                    <a href="{{ route('home') }}" class="text-white block m-10 text-3xl">Home</a>
+                    <a href="{{ route('home') }}" class="hover:text-white block m-10 text-3xl  text-[#505050]">Home</a>
                     <a href="{{ route('services') }}"
                         class="hover:text-white block m-10 text-3xl text-[#505050]">Services</a>
                     <a href="{{ route('work') }}"
@@ -124,7 +124,7 @@
                     <a href="{{ route('about') }}"
                         class="hover:text-white block m-10 text-3xl font-sans text-[#505050]">About</a>
                     <a href="{{ route('contact') }}"
-                        class="hover:text-white block m-10 text-3xl font-sans text-[#505050]">Contact</a>
+                        class="text-white block m-10 text-3xl font-sans text-[#505050]">Contact</a>
                 </nav>
             </div>
         </header>
@@ -215,13 +215,10 @@
             <!-- map  -->
 
             <div class="hidden md:flex map">
-                <iframe class="absolute w-full bottom-0" width="100%" height="400" frameborder="0"
-                    scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas"
-                    src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Trivandrum+(trivandrum)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-                <a href='https://www.acadoo.de/'>Dissertation Ghostwriter</a>
-                <script type='text/javascript'
-                    src='https://embedmaps.com/google-maps-authorization/script.js?id=39cbfb0990de8811b7b3f07bb5889dc1c0fde55c'>
-                </script>
+                <div class="absolute w-full bottom-0" style="width: 100%"><iframe width="100%" height="600"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=SREE%20PANKAJ%20BUILDING,%20NO:%20XVII%20/77%20MAHADEVA%20NAGAR,%20PERUVARAM%20NORTH%20PARAVUR,+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                            href="https://www.gps.ie/">gps vehicle tracker</a></iframe></div>
             </div>
             <div class="flex md:hidden">
                 <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0"

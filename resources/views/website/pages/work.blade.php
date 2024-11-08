@@ -8,7 +8,7 @@
         content="Fox Vista|Foxvista|Foxvista|App Development company in Trivandrum|Website development company in Trivandrum|Best app development Company in Trivandrum|Best Webdesigning Company in Trivandrum|Best Web Development company in Trivandrum|Best App Development company in Kerala|Best Web development company in Kerala|Digital Marketing Agency In Trivandrum|Ui/Ux Development in Trivandrum|Product designing In Trivandrum" />
     <meta name="description"
         content="Foxvista - The Best Company in Trivandrum Focusing on App Development,Web development,Web Designing, Ui /Ux & Digital Marketing. Best Web Development Company in Trivandrum,Best App Development Company in Trivandrum,Best Web designing Company in Trivandrum,Best Digital Marketing Service in Trivandrum" />
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicon.png') }}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/FoxVIsta_FavIcon.svg') }}" />
     <title>Fox Vista | See The Future</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -245,9 +245,9 @@
                 </button>
                 <div
                     class="bg-white md:bg-transparent w-full top-14 md:top-0 hidden md:flex flex-col md:flex-row items-center justify-center gap-5">
-                    <a href="{{ route('home') }}" class="text-white">Home</a>
+                    <a href="{{ route('home') }}" class="hover:text-white font-sans text-[#505050]">Home</a>
                     <a href="{{ route('services') }}" class="hover:text-white font-sans text-[#505050]">Services</a>
-                    <a href="{{ route('work') }}" class="hover:text-white font-sans text-[#505050]">Works</a>
+                    <a href="{{ route('work') }}" class="text-white font-sans text-[#505050]">Works</a>
                     <a href="{{ route('about') }}" class="hover:text-white font-sans text-[#505050]">About</a>
                     <a href="{{ route('contact') }}" class="hover:text-white font-sans text-[#505050]">Contact</a>
                 </div>
@@ -266,11 +266,10 @@
                     </svg>
                 </button>
                 <nav>
-                    <a href="{{ route('home') }}" class="text-white block m-10 text-3xl">Home</a>
+                    <a href="{{ route('home') }}" class="hover:text-white block m-10 text-3xl  text-[#505050]">Home</a>
                     <a href="{{ route('services') }}"
                         class="hover:text-white block m-10 text-3xl text-[#505050]">Services</a>
-                    <a href="{{ route('work') }}"
-                        class="hover:text-white block m-10 text-3xl text-[#505050]">Works</a>
+                    <a href="{{ route('work') }}" class="text-white block m-10 text-3xl text-[#505050]">Works</a>
                     <a href="{{ route('about') }}"
                         class="hover:text-white block m-10 text-3xl font-sans text-[#505050]">About</a>
                     <a href="{{ route('contact') }}"
