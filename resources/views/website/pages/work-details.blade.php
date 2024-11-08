@@ -9,7 +9,7 @@
     <meta name="description"
         content="Foxvista - The Best Company in Trivandrum Focusing on App Development,Web development,Web Designing, Ui /Ux & Digital Marketing. Best Web Development Company in Trivandrum,Best App Development Company in Trivandrum,Best Web designing Company in Trivandrum,Best Digital Marketing Service in Trivandrum" />
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png" />
-    <title>Fox Vista || Designing & Developing</title>
+    <title>Fox Vista | See The Future</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -48,7 +48,7 @@
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
     <script src="{{ asset('src/script.js') }}"></script>
-    <script src="{{ asset('src/script.js') }}"></script>
+    <script src="{{ asset('src/sidebar.js') }}"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 

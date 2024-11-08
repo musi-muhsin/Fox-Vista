@@ -9,7 +9,7 @@
     <meta name="description"
         content="Foxvista - The Best Company in Trivandrum Focusing on App Development,Web development,Web Designing, Ui /Ux & Digital Marketing. Best Web Development Company in Trivandrum,Best App Development Company in Trivandrum,Best Web designing Company in Trivandrum,Best Digital Marketing Service in Trivandrum" />
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicon.png') }}" />
-    <title>Fox Vista || Designing & Developing</title>
+    <title>Fox Vista | See The Future</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -95,9 +95,9 @@
                 </button>
                 <div
                     class="bg-white md:bg-transparent w-full top-14 md:top-0 hidden md:flex flex-col md:flex-row items-center justify-center gap-5">
-                    <a href="{{ route('home') }}" class="hover:text-white text-[#505050]">Home</a>
-                    <a href="{{ route('services') }}" class="text-white">Services</a>
-                    <a href="{{ route('work') }}" class="hover:text-white text-[#505050]">Works</a>
+                    <a href="{{ route('home') }}" class="text-white">Home</a>
+                    <a href="{{ route('services') }}" class="hover:text-white font-sans text-[#505050]">Services</a>
+                    <a href="{{ route('work') }}" class="hover:text-white font-sans text-[#505050]">Works</a>
                     <a href="{{ route('about') }}" class="hover:text-white font-sans text-[#505050]">About</a>
                     <a href="{{ route('contact') }}" class="hover:text-white font-sans text-[#505050]">Contact</a>
                 </div>
@@ -116,11 +116,11 @@
                     </svg>
                 </button>
                 <nav>
-                    <a href="{{ route('home') }}"
-                        class="hover:text-white block m-10 text-3xl text-[#505050] font-sans">Home</a>
-                    <a href="{{ route('services') }}" class="text-white block m-10 text-3xl font-sans">Services</a>
+                    <a href="{{ route('home') }}" class="text-white block m-10 text-3xl">Home</a>
+                    <a href="{{ route('services') }}"
+                        class="hover:text-white block m-10 text-3xl text-[#505050]">Services</a>
                     <a href="{{ route('work') }}"
-                        class="hover:text-white block m-10 text-3xl text-[#505050] font-sans">Works</a>
+                        class="hover:text-white block m-10 text-3xl text-[#505050]">Works</a>
                     <a href="{{ route('about') }}"
                         class="hover:text-white block m-10 text-3xl font-sans text-[#505050]">About</a>
                     <a href="{{ route('contact') }}"
@@ -129,6 +129,7 @@
             </div>
         </header>
     </div>
+
 
     <div id="smooth-wrapper">
         <div id="smooth-content" class="overflow-visible w-100">
@@ -261,7 +262,7 @@
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
     <script src="{{ asset('src/script.js') }}"></script>
-    <script src="{{ asset('src/script.js') }}"></script>
+    <script src="{{ asset('src/sidebar.js') }}"></script>
 </body>
 
 </html>

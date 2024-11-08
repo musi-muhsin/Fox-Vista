@@ -117,9 +117,10 @@
                 </button>
                 <nav>
                     <a href="{{ route('home') }}" class="text-white block m-10 text-3xl">Home</a>
-                    <a href="{{ route('work') }}" class="hover:text-white block m-10 text-3xl text-[#505050]">Works</a>
                     <a href="{{ route('services') }}"
                         class="hover:text-white block m-10 text-3xl text-[#505050]">Services</a>
+                    <a href="{{ route('work') }}"
+                        class="hover:text-white block m-10 text-3xl text-[#505050]">Works</a>
                     <a href="{{ route('about') }}"
                         class="hover:text-white block m-10 text-3xl font-sans text-[#505050]">About</a>
                     <a href="{{ route('contact') }}"
@@ -490,7 +491,7 @@
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
     <script src="{{ asset('src/script.js') }}"></script>
-    <script src="{{ asset('src/script.js') }}"></script>
+    <script src="{{ asset('src/sidebar.js') }}"></script>
 
     <!-- <script>
         const swiper = new Swiper('.sample-slider', {

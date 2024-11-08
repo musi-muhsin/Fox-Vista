@@ -9,7 +9,7 @@
     <meta name="description"
         content="Foxvista - The Best Company in Trivandrum Focusing on App Development,Web development,Web Designing, Ui /Ux & Digital Marketing. Best Web Development Company in Trivandrum,Best App Development Company in Trivandrum,Best Web designing Company in Trivandrum,Best Digital Marketing Service in Trivandrum" />
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicon.png') }}" />
-    <title>Fox Vista || Designing & Developing</title>
+    <title>Fox Vista | See The Future</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -95,74 +95,9 @@
                 </button>
                 <div
                     class="bg-white md:bg-transparent w-full top-14 md:top-0 hidden md:flex flex-col md:flex-row items-center justify-center gap-5">
-                    <!-- <div class="dropdown py-8">
-                  <a href="#" class="hover-group font-sans text-[#505050] flex items-center gap-2 transition">
-                    <span class="text">Services</span>
-                    <svg class="icon fill-[#505050] " width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 16a1 1 0 0 1-.64-.23l-6-5a1 1 0 1 1 1.28-1.54L12 13.71l5.36-4.32a1 1 0 0 1 1.41.15a1 1 0 0 1-.14 1.46l-6 4.83A1 1 0 0 1 12 16"/>
-                    </svg>
-                  </a>
-                  <div class="dropdown-content absolute px-10 pt-9 pb-5 flex overflow-hidden">
-                      <div class="container grid grid-cols-2">
-                          <div class="my-auto">
-                              <div class="font-sans text-white text-5xl leading-[1.2]">
-                                 <span>
-                                  Elevate Your
-                                 </span>
-                                 <span>
-                                  Brand Unleash
-                                 </span>
-                                 <span>
-                                  its Inner Superhero
-                                 </span>
-                              </div>
-                            </div>
-                            <div class=" grid grid-cols-2 grid-rows-2 gap-5">
-                              <div class="flex flex-col gap-4">
-                                  <h6 class="text-white font-sans font-semibold text-2xl ">Branding</h6>
-                                  <ul class="text-white font-sans flex flex-col gap-2">
-                                      <li>Brand Consulting</li>
-                                      <li>Brand Identity</li>
-                                      <li>Product design</li>
-                                      <li>Graphic Design</li>
-                                      <li>Motion Graphics</li>
-                                  </ul>
-                              </div>
-                              <div class="flex flex-col gap-4">
-                                  <h6 class="text-white font-sans font-semibold text-2xl ">Technology</h6>
-                                  <ul class="text-white font-sans flex flex-col gap-2">
-                                      <li>Web Development</li>
-                                      <li>Mobile App Development</li>
-                                      <li>E-commerce</li>
-                                  </ul>
-                              </div>
-                              <div class="flex flex-col gap-4">
-                                  <h6 class="text-white font-sans font-semibold text-2xl ">Experience Design</h6>
-                                  <ul class="text-white font-sans flex flex-col gap-2">
-                                      <li>UI/UX Design</li>
-                                      <li>Web Experience</li>
-                                      <li>Mobile Experience</li>
-                                      <li>Commerce Experience</li>
-                                  </ul>
-                              </div>
-                              <div class="flex flex-col gap-4">
-                                  <h6 class="text-white font-sans font-semibold text-2xl ">Digital Marketing</h6>
-                                  <ul class="text-white font-sans flex flex-col gap-2">
-                                      <li>Search Engine Optimization</li>
-                                      <li>Social Media Managment</li>
-                                      <li>Performance Marketing</li>
-                                      <li>Analytics</li>
-                                  </ul>
-                              </div>
-                         
-                            </div>
-                      </div>
-                 
-                  </div>
-                </div> -->
-                    <a href="{{ route('home') }}" class="hover:text-white text-[#505050]">Home</a>
-                    <a href="{{ route('services') }}" class="text-white">Services</a>
-                    <a href="{{ route('work') }}" class="hover:text-white text-[#505050]">Works</a>
+                    <a href="{{ route('home') }}" class="text-white">Home</a>
+                    <a href="{{ route('services') }}" class="hover:text-white font-sans text-[#505050]">Services</a>
+                    <a href="{{ route('work') }}" class="hover:text-white font-sans text-[#505050]">Works</a>
                     <a href="{{ route('about') }}" class="hover:text-white font-sans text-[#505050]">About</a>
                     <a href="{{ route('contact') }}" class="hover:text-white font-sans text-[#505050]">Contact</a>
                 </div>
@@ -181,11 +116,11 @@
                     </svg>
                 </button>
                 <nav>
-                    <a href="{{ route('home') }}"
-                        class="hover:text-white block m-10 text-3xl text-[#505050] font-sans">Home</a>
-                    <a href="{{ route('services') }}" class="text-white block m-10 text-3xl font-sans">Services</a>
+                    <a href="{{ route('home') }}" class="text-white block m-10 text-3xl">Home</a>
+                    <a href="{{ route('services') }}"
+                        class="hover:text-white block m-10 text-3xl text-[#505050]">Services</a>
                     <a href="{{ route('work') }}"
-                        class="hover:text-white block m-10 text-3xl text-[#505050] font-sans">Works</a>
+                        class="hover:text-white block m-10 text-3xl text-[#505050]">Works</a>
                     <a href="{{ route('about') }}"
                         class="hover:text-white block m-10 text-3xl font-sans text-[#505050]">About</a>
                     <a href="{{ route('contact') }}"
@@ -194,7 +129,6 @@
             </div>
         </header>
     </div>
-
     <div id="smooth-wrapper">
         <div id="smooth-content" class="overflow-visible w-100">
             <!-- hero  -->
@@ -368,7 +302,7 @@
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
     <script src="{{ asset('src/script.js') }}"></script>
-    <script src="{{ asset('src/script.js') }}"></script>
+    <script src="{{ asset('src/sidebar.js') }}"></script>
 </body>
 
 </html>
